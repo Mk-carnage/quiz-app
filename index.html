@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <div class="quiz-info">
+                <p>Topic: <span id="quiz-topic">Loading...</span></p>
+                <p>Total Questions: <span id="total-questions">0</span></p>
+                <p>Time Limit: <span id="time-limit">0</span> minutes</p>
+            </div>
+            <button class="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-container">
+            <div class="stats">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="question-number">Question <span id="current-question">1</span>/<span id="total-questions-quiz">10</span></div>
+            </div>
+            <div class="lives">
+                <div class="life"></div>
+                <div class="life"></div>
+                <div class="life"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="question-container">
+                <div class="question" id="question-text"></div>
+                <div class="options" id="options-container"></div>
+            </div>
+            <button class="next-btn" style="display: none;">Next Question</button>
+        </div>
+
+        <div class="result-screen">
+            <h2>Quiz Complete!</h2>
+            <div class="score-display">
+                Final Score: <span id="final-score">0</span>
+            </div>
+            <button class="start-btn" onclick="location.reload()">Try Again</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

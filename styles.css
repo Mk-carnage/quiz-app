@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-screen {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-screen h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.quiz-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.start-btn, .next-btn, .option-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.start-btn:hover, .next-btn:hover, .option-btn:hover {
+  background: #45a049;
+}
+
+.quiz-container {
+  display: none;
+}
+
+.question-container {
+  margin: 2rem 0;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.options {
+  display: grid;
+  gap: 1rem;
+}
+
+.option-btn {
+  background: #fff;
+  color: #333;
+  border: 2px solid #ddd;
+  text-align: left;
+}
+
+.option-btn:hover {
+  background: #f8f9fa;
+}
+
+.option-btn.selected {
+  background: #e3f2fd;
+  border-color: #2196F3;
+}
+
+.option-btn.correct {
+  background: #c8e6c9;
+  border-color: #4CAF50;
+}
+
+.option-btn.wrong {
+  background: #ffcdd2;
+  border-color: #f44336;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4CAF50;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.result-screen {
+  display: none;
+  text-align: center;
+}
+
+.score-display {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: #2c3e50;
+}
+
+.lives {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.life {
+  width: 20px;
+  height: 20px;
+  background: #f44336;
+  border-radius: 50%;
+}
+
+.life.lost {
+  background: #ddd;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.score-animation {
+  animation: pulse 0.5s;
+}
