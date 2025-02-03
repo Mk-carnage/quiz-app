@@ -25,12 +25,12 @@ A live demo of the app can be accessed here: [Demo Link] (if available).
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/interactive-quiz-app.git
+    git clone https://github.com/your-username/quiz-app.git
     ```
 
 2. **Navigate to the project directory**:
     ```bash
-    cd interactive-quiz-app
+    cd quiz-app
     ```
 
 3. **Open the `index.html` file** in your browser:
